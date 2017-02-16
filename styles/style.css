@@ -89,7 +89,7 @@ body,ul,h1,h2,h3,h4,p,span,div,li {margin: 0;padding: 0;box-sizing: border-box;}
 		}
 	}
 
-	@media (max-width: 480px){
+	@media (max-width: 500px){
 		header .title{
 			padding: 0;
 		}
