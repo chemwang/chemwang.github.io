@@ -1,0 +1,122 @@
+body,ul,h1,h2,h3,h4,p,span,div,li {margin: 0;padding: 0;box-sizing: border-box;}
+	ul,li {list-style: none;}
+	a{text-decoration: none;color: #000;}
+	.clear::after{content: "";display: block;clear: both;}
+	header{
+		width: 100%; height: 60px; 
+		background-color: #fafafa;
+   		background: -moz-linear-gradient(#fafafa,#eaeaea);
+    	background: -webkit-linear-gradient(#fafafa,#eaeaea); 
+    	box-shadow: 0 1px 0 rgba(255,255,255,.4), 0 0 10px rgba(0,0,0,.1);
+    	line-height: 60px;
+	}
+	body{
+		background-color: #fcfcec;
+		font: 100% "microsoft yahei";
+		width: 100%;height: 100%
+	}
+	header .wrap{
+		padding: 0 5%;position: relative;
+	}
+	header .title{
+		float: left;
+	}
+	.wrap{
+		width: 80%;margin: 0 auto;
+	}
+	.nav {
+		float: right;
+	}
+	.nav li{
+		float: left;
+		margin-right: 10px;
+	}
+	.nav li a{
+		display: block;
+	}
+	.nav li a:hover{
+		color: #4183c4;
+		text-shadow: 0 0 5px #ccc;
+	}
+
+
+	
+	
+	.menu-btn{
+		float: right;
+		padding: 4px;
+		margin-top: 18px;
+		display: none;
+	}
+	.line{
+		display: block;
+    	width: 22px;height: 2px;
+    	margin-bottom: 5px;
+   		border-radius: 1px;
+   		background-color: #999;
+	}
+	.menu-btn span:last-child {
+		margin: 0;
+	}
+	.menu-btn:hover{
+		background-color: #ccc;
+		cursor: pointer;
+	}
+
+	/*//主体内容区，提供项目的连接*/
+	.content{
+		/*border: 1px dotted #ccc;*/
+	}
+	.projects{
+		padding: 5%;
+	}
+	.projects-list li{
+		float: left; width: 50%;
+		line-height: 2;
+		padding: 3px;
+	}
+	.projects-list li a{
+		display: block;padding-left: 10%;
+		background-color: #eee;
+	}
+	.projects-list li a:hover{
+		background-color: #ccc;
+		-webkit-box-shadow: 1px 1px 2px 1px #abc;
+	}
+	@media (max-width: 800px){
+		header,.header a,.content{
+			font-size: 0.8em;
+		}
+	}
+
+	@media (max-width: 480px){
+		header .title{
+			padding: 0;
+		}
+		header,.header a,.content{
+			font-size: 0.6em;
+		}
+		.nav{
+			display: none;
+		}
+		.menu-btn{
+			display: block;
+		}
+	}
+
+	/*当尺寸小于520px 导航栏隐藏后，点击btn显示出导航栏，显示的样式为show-nav*/
+	.show-nav{
+		display: block;
+		position: absolute;
+		width: 50%;
+		top: 100%;right: 0;
+	}
+	.show-nav li{
+		float: none;
+		height: 2rem;
+		background-color: #cacaca;border-bottom: 2px solid #fafafa;
+		line-height: 2rem;text-align: center;
+   		/*background: -moz-linear-gradient(#fafafa,#eaeaea);
+    	background: -webkit-linear-gradient(#fafafa,#cacaca); 
+    	box-shadow: 0 1px 0 rgba(255,255,255,.4), 0 0 2px rgba(0,0,0,.1);*/
+	}
