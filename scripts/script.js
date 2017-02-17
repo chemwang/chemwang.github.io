@@ -5,7 +5,7 @@ var menuBtn = document.querySelector('.menu-btn');
 	menuBtn.onclick = toggleMenu;
 	 window.onresize = function(){
         var browserWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-		if(browserWidth>500) {
+		if(browserWidth>530) {
      		 onOff = false;
        		 toggleMenu();
 		}
